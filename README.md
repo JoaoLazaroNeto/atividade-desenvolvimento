@@ -54,6 +54,7 @@ Alternativas consideradas:
 - Python com a biblioteca Pillow (para otimizar e gerar as imagens dos produtos)
 - Pexels (imagens royalty-free)
 - Navegador (testes e inspeção)
+- DeepSeek V4 Flash Free.
 
 ### Uso de IA
 
