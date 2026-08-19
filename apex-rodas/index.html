@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX Rodas — Rodas Esportivas &amp; Liga Leve</title>
+  <meta name="description" content="APEX Rodas — rodas esportivas e de liga leve. Catálogo com mais de 400 rodas, pneus e acessórios das melhores marcas, com entrega para todo o Brasil.">
+  <meta name="theme-color" content="#0066cc">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="APEX Rodas — Rodas Esportivas & Liga Leve">
+  <meta property="og:description" content="Rodas esportivas e de liga leve. Aro 13 ao 22, com as melhores marcas e entrega para todo o Brasil.">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230066cc'/%3E%3Ctext x='32' y='43' font-family='Arial, sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='white'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="header">
+    <nav>
+      <a class="logo" href="#topo">APEX<span>·</span>Rodas</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#topo">Início</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+      <a class="nav-cta" href="#catalogo">Ver catálogo ›</a>
+    </nav>
+  </header>
+
+  <!-- ===== Bloco 1: Sobre ===== -->
+  <section class="hero" id="topo">
+    <p class="hero-tag reveal">Sobre a loja</p>
+    <h1 class="reveal">Rodas que <span class="stroke">transformam</span><br>o seu carro.</h1>
+    <p class="sub reveal">
+      A <strong>APEX Rodas</strong> é especializada em rodas esportivas e de liga leve.
+      Trabalhamos com as melhores marcas do mercado para <strong>JDM</strong>, <strong>muscle</strong>,
+      <strong>arrancada</strong> e <strong>stance</strong>, com entrega para todo o Brasil.
+    </p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-solid" href="#catalogo">Ver catálogo</a>
+      <a class="btn" href="#sobre">Nossa história ›</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div><span class="num">408<sup>+</sup></span><span class="label">produtos reais</span></div>
+      <div><span class="num">12<sup>+</sup></span><span class="label">marcas parceiras</span></div>
+      <div><span class="num">13–22</span><span class="label">aros disponíveis</span></div>
+      <div><span class="num">100%</span><span class="label">entrega Brasil</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Bloco 2: Catálogo ===== -->
+  <section class="block" id="catalogo">
+    <div class="block-head reveal">
+      <div>
+        <p class="label">Catálogo</p>
+        <h2>Todas as <span class="stroke">rodas</span></h2>
+      </div>
+      <p class="desc">Fotos reais dos produtos. Filtre por aro, marca ou use a busca para encontrar a roda perfeita.</p>
+    </div>
+
+    <div class="busca-wrap reveal">
+      <span class="busca-icon">⌕</span>
+      <input class="busca" id="busca" type="text" placeholder="Buscar por modelo, marca ou aro...">
+    </div>
+
+    <div class="filtros reveal" id="filtros">
+      <button class="chip ativo" data-cat="todas">Todas</button>
+      <button class="chip" data-cat="rodas">Rodas</button>
+      <button class="chip" data-cat="pneus">Pneus</button>
+      <button class="chip" data-cat="acessorios">Acessórios</button>
+      <button class="chip" data-cat="limpeza">Limpeza</button>
+    </div>
+
+    <div class="sub-filtros reveal" id="sub-filtros">
+      <button class="chip ativo" data-aro="todos">Todos os aros</button>
+      <button class="chip" data-aro="aro13">Aro 13</button>
+      <button class="chip" data-aro="aro14">Aro 14</button>
+      <button class="chip" data-aro="aro15">Aro 15</button>
+      <button class="chip" data-aro="aro16">Aro 16</button>
+      <button class="chip" data-aro="aro17">Aro 17</button>
+      <button class="chip" data-aro="aro18">Aro 18</button>
+      <button class="chip" data-aro="aro20">Aro 20</button>
+      <button class="chip" data-aro="aro22">Aro 22</button>
+    </div>
+
+    <p class="contagem reveal" id="contagem"></p>
+    <div class="grade reveal" id="grade"></div>
+    <div class="carregar-wrap" id="carregar-wrap" hidden>
+      <button class="btn-carregar" id="carregar-mais">Carregar mais produtos</button>
+    </div>
+  </section>
+
+  <section class="block" id="sobre">
+    <div class="block-head reveal">
+      <div>
+        <p class="label">Nossa história</p>
+        <h2>Garagem que virou <span class="stroke">referência</span></h2>
+      </div>
+      <p class="desc">Começamos montando rodas para os amigos na garagem de casa. Hoje somos referência em rodas esportivas e de liga leve no Brasil.</p>
+    </div>
+    <div class="features">
+      <article class="feature reveal">
+        <span class="feature-ico" aria-hidden="true">⌖</span>
+        <h3>Marcas consagradas</h3>
+        <p>Trabalhamos com KRMai, Weld, BRW, Zunky, Scorro e outras marcas reconhecidas no mercado de rodas.</p>
+      </article>
+      <article class="feature reveal">
+        <span class="feature-ico" aria-hidden="true">⌀</span>
+        <h3>Aros do 13 ao 22</h3>
+        <p>Do veículo popular ao off-road e à arrancada: temos a roda certa para cada projeto e estilo.</p>
+      </article>
+      <article class="feature reveal">
+        <span class="feature-ico" aria-hidden="true">✓</span>
+        <h3>Atendimento direto</h3>
+        <p>Pedido fácil e rápido pelo WhatsApp, com orçamento sem compromisso e entrega para todo o Brasil.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="logo">APEX<span>·</span>Rodas</div>
+        <p class="sobre">Loja especializada em rodas esportivas, liga leve e acessórios. Aro 13 ao 22, com as melhores marcas e entrega para todo o Brasil.</p>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <ul>
+          <li><a href="https://wa.me/5541992114884" target="_blank">WhatsApp (41) 99211-4884</a></li>
+          <li><a href="#">vendas@apexrodas.com.br</a></li>
+          <li><a href="#">R. da Garagem, 244</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Marcas</h5>
+        <ul>
+          <li><a href="#catalogo">KRMai</a></li>
+          <li><a href="#catalogo">Weld</a></li>
+          <li><a href="#catalogo">BRW</a></li>
+          <li><a href="#catalogo">Zunky / Scorro</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 APEX Rodas — Todos os direitos reservados</p>
+      <p>Rodas de liga leve · Esportivas · Aros 13–22</p>
+    </div>
+  </footer>
+
+  <!-- ===== Modal do produto ===== -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="modal-fechar" id="modal-fechar">✕</button>
+      <div class="modal-grid">
+        <div class="modal-img">
+          <img id="m-img" src="" alt="">
+        </div>
+        <div class="modal-conteudo">
+          <p class="ref" id="m-ref"></p>
+          <h2 id="m-nome"></h2>
+          <p class="marca" id="m-marca"></p>
+          <div class="modal-preco"><small>Preço de mercado</small><span id="m-preco"></span></div>
+          <div class="modal-info">
+            <div class="item"><span class="k">Categoria</span><span id="m-cat"></span></div>
+            <div class="item"><span class="k">Disponibilidade</span><span>Pronta entrega</span></div>
+            <div class="item"><span class="k">Entrega</span><span>Todo o Brasil</span></div>
+          </div>
+          <a class="btn-whats" id="m-whats" href="#" target="_blank">Pedir pelo WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
