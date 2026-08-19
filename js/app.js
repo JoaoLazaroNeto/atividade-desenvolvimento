@@ -203,7 +203,7 @@
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
 
-    ['topo', 'catalogo', 'sobre'].forEach(id => {
+    ['topo', 'catalogo', 'como-funciona', 'sobre', 'depoimentos', 'faq'].forEach(id => {
       const el = document.getElementById(id);
       if (el) spy.observe(el);
     });
